@@ -8,6 +8,7 @@ export const PostRouter = Router();
 PostRouter.post("/post", (req: Request, res: Response) => {
   try {
     const payload = req.body;
+    console.log(payload);
 
     switch (payload?.event) {
       case "message":
