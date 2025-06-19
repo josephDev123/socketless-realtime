@@ -8,6 +8,6 @@ export function nextValue() {
 
 export async function* valueGenerator() {
   while (true) {
-    yield await nextValue();
+    yield nextValue();
   }
 }
